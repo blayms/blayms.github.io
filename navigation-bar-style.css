@@ -29,11 +29,19 @@ body {
 
 .filler {
     position: absolute;
+    display: flex;
     top: 60px;
     bottom: 9px;
     left: 9px;
     right: 9px;
+    justify-content: center;
+    align-items: flex-end;
     background-color: rgb(71, 71, 71);
     border-radius: 10px;
     box-shadow: 5px 5px 21px -3px #000000;
+}
+
+.yeartext {
+    font-family: "Comic Sans MS", "sans-serif";
+    color: white;
 }
