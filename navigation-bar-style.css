@@ -1,10 +1,17 @@
 nav {
-    height: 32px;
+    height: 40px;
     background-color: blue;
 }
 
-    nav > a {
-        font-family: "Comic Sans MS", "sans-serif";
-        font-size: 24px;
-        color: black;
-    }
+nav > a {
+    font-family: "Comic Sans MS", "sans-serif";
+    font-size: 24px;
+    color: black;
+    padding: 2px 5px 5px 2px;
+}
+
+nav > img {
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+}
