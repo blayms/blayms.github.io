@@ -44,10 +44,7 @@ function loadStuff() {
 
     dropdownToggle.addEventListener('click', function () {
         dropdownMenu.classList.toggle('show');
-    });
-
-    dropdownToggle.addEventListener('click', function () {
-        dropdownToggle.children[1].classList.toggle('showed');
+dropdownToggle.children[1].classList.toggle('showed');
     });
 
     // Get the modal element
