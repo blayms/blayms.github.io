@@ -26,3 +26,14 @@ nav * img {
 body {
     background-color: rgb(45,45,45);
 }
+
+.filler {
+    position: absolute;
+    top: 60px;
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+    background-color: rgb(71, 71, 71);
+    border-radius: 10px;
+    box-shadow: 5px 5px 21px -3px #000000;
+}
