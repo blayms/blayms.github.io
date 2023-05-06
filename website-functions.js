@@ -1,5 +1,4 @@
-function loadStuff()
-{
+function loadStuff() {
     // Create navigation bar for current HTML page
     let navbarElement = document.createElement("nav");
     navbarElement.innerHTML = `
@@ -11,7 +10,7 @@ function loadStuff()
     // Import styles for current HTML page
     let style = document.createElement("link");
     document.querySelector("head").appendChild(style)
-    style.outerHTML = `<link rel="stylesheet" href="navigation-bar-style.css">`;
+    style.outerHTML = `<link rel="stylesheet" href="styles-container.css">`;
 
     const currentYear = new Date().getFullYear(); // Get the current year
     const yearText = document.getElementsByClassName('yeartext')[0]; // Get the <p> element
@@ -21,12 +20,12 @@ function loadStuff()
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownMenu = document.querySelector('.dropdown-menu');
 
-    dropdownToggle.addEventListener('click', function() {
+    dropdownToggle.addEventListener('click', function () {
         dropdownMenu.classList.toggle('show');
     });
 
-    dropdownToggle.addEventListener('click', function() {
-        dropdownToggle.children[0].classList.toggle('showed');
+    dropdownToggle.addEventListener('click', function () {
+        dropdownToggle.children[1].classList.toggle('showed');
     });
 }
 setTimeout(loadStuff, 20)
