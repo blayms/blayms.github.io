@@ -1,0 +1,10 @@
+nav {
+    height: 32px;
+    background-color: blue;
+}
+
+    nav > a {
+        font-family: "Comic Sans MS", "sans-serif";
+        font-size: 24px;
+        color: black;
+    }
