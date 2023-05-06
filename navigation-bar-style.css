@@ -10,7 +10,7 @@ nav > a {
     padding: 2px 5px 5px 2px;
 }
 
-nav > img {
+nav * img {
     width: 20px;
     height: 20px;
     padding: 2px 2px 2px 2px;
