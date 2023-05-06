@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEA Docs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
 </head>
 <body>
     <script src="website-functions.js"></script>
     <div class="filler">
+
+        <button id="openModal">Open Modal</button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <pre><code class="language-csharp">
+// Your C# code goes here
+public class MyClass
+{
+    public static void Main()
+    {
+        Console.WriteLine("Hello, world!");
+    }
+}
+</code></pre>
+            </div>
+        </div>
+
         <div class="dropdown">
             <div class="dropdown-toggle">
                 <b class="noselect">📚 Modules</b>
@@ -19,7 +41,7 @@
                 <a href="#">Option 2</a>
                 <a href="#">Option 3</a>
             </div>
-        </div>          
+        </div>
         <div class="about">
             <p class="yeartext"></p>
             <div class="socials">
@@ -47,5 +69,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>

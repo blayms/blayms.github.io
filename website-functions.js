@@ -1,4 +1,9 @@
 function loadStuff() {
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        Prism.highlightAll();
+    });
+
     // Create navigation bar for current HTML page
     let navbarElement = document.createElement("nav");
     navbarElement.innerHTML = `
@@ -27,5 +32,32 @@ function loadStuff() {
     dropdownToggle.addEventListener('click', function () {
         dropdownToggle.children[1].classList.toggle('showed');
     });
+
+    // Get the modal element
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Open the modal when the button is clicked
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    // Close the modal when the user clicks on <span> (x)
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // Close the modal when the user clicks anywhere outside of it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
 }
 setTimeout(loadStuff, 20)
