@@ -1,3 +1,20 @@
+function getAllTextFiles(dirPath, callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', dirPath, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const files = xhr.responseText.split('\n');
+            const txtFiles = files.filter((file) => file.trim().endsWith('.txt'));
+            callback(txtFiles);
+        }
+    };
+    xhr.send();
+}
+
+var allFileOutputs = {
+
+};
+
 function loadStuff() {
 
     window.addEventListener('DOMContentLoaded', (event) => {
@@ -59,5 +76,8 @@ function loadStuff() {
         }
     };
 
+    getAllTextFiles('./text', function (txtFiles) {
+        console.log(txtFiles);
+    });
 }
 setTimeout(loadStuff, 20)
