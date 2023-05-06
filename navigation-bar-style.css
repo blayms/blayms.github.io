@@ -53,5 +53,5 @@ body {
     left: 9px;
     right: 9px;
     background: rgb(63, 63, 63);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
