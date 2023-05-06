@@ -1,6 +1,7 @@
 nav {
     height: 40px;
     background-color: blue;
+    display: flex;
 }
 
 nav > a {
@@ -9,10 +10,13 @@ nav > a {
     color: black;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 2px;
+    text-decoration: none;
 }
 
 nav * img {
+    display: inline-block;
     width: 30px;
     height: 30px;
-    padding: 5px 5px 5px 5px;
+    padding-top: 3px;
 }
