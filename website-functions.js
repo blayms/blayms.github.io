@@ -1,20 +1,3 @@
-function getAllTextFiles(dirPath, callback) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', dirPath, true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            const files = xhr.responseText.split('\n');
-            const txtFiles = files.filter((file) => file.trim().endsWith('.txt'));
-            callback(txtFiles);
-        }
-    };
-    xhr.send();
-}
-
-var allFileOutputs = {
-
-};
-
 function loadStuff() {
 
     window.addEventListener('DOMContentLoaded', (event) => {
@@ -59,9 +42,15 @@ function loadStuff() {
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
+
     // Open the modal when the button is clicked
     btn.onclick = function () {
+        var csCodeIndex = "C# Hello World Example";
+        var codeBlock = document.getElementById('code-block');
+        codeBlock.innerHTML = `<p style="color:white;position: fixed;margin-top: -25px;font-weight: bold;">${csCodeIndex}</p>
+        <pre><code class="language-csharp">${globalInstance.csharp[csCodeIndex]}</code></pre>`;
         modal.style.display = "block";
+        Prism.highlightAll();
     };
 
     // Close the modal when the user clicks on <span> (x)
@@ -75,9 +64,6 @@ function loadStuff() {
             modal.style.display = "none";
         }
     };
-
-    getAllTextFiles('./text', function (txtFiles) {
-        console.log(txtFiles);
-    });
 }
-setTimeout(loadStuff, 20)
+
+setTimeout(loadStuff, 10)

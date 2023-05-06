@@ -188,21 +188,21 @@ code[class*="language-"] {
     max-width: 400px;
 }
 
-.close {
+/*.close {
     color: black;
     float: right;
     position: relative;
     z-index: 1;
-    left: 5px;
+    left: 35px;
     top: 5px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-}
+}*/
 
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

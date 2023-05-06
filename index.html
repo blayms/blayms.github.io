@@ -6,33 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="MEA Docs" />
     <meta property="og:type" content="website" />
+    <link rel="icon" href="./icons/ico/mea.ico" type="image/x-icon">
     <meta property="og:url" content="https://blayms.github.io/mea-docs/" />
     <meta property="og:description" content="ModExtraAssets Documentation Website. Tool made by Blayms" />
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/802912415326273566/1104511705737875641/mea.png"/>
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/802912415326273566/1104511705737875641/mea.png" />
     <title>MEA Docs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
 </head>
 <body>
+    <script src="global.js"></script>
     <script src="website-functions.js"></script>
     <div class="filler">
 
-        <button id="openModal">Open Modal</button>
-
         <div id="myModal" class="modal">
             <div class="modal-content">
+                <div id="code-block"></div>
                 <span class="close">&times;</span>
-                <pre><code class="language-csharp">
-// Your C# code goes here
-public class MyClass
-{
-    public static void Main()
-    {
-        Console.WriteLine("Hello, world!");
-    }
-}
-</code></pre>
             </div>
         </div>
 
@@ -47,6 +38,7 @@ public class MyClass
                 <a href="#">Option 3</a>
             </div>
         </div>
+        <button id="openModal">Open Modal</button>
         <div class="about">
             <p class="yeartext"></p>
             <div class="socials">
