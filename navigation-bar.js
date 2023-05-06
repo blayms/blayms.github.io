@@ -16,5 +16,17 @@ function loadStuff()
     const currentYear = new Date().getFullYear(); // Get the current year
     const yearText = document.getElementsByClassName('yeartext')[0]; // Get the <p> element
     yearText.innerHTML = `© ${currentYear}, Blayms`; // Set the text content to include the current year
+
+    // Dropdowns
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownToggle.addEventListener('click', function() {
+        dropdownMenu.classList.toggle('show');
+    });
+
+    dropdownToggle.addEventListener('click', function() {
+        dropdownToggle.children[0].classList.toggle('showed');
+    });
 }
 setTimeout(loadStuff, 20)
