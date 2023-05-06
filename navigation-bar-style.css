@@ -41,6 +41,7 @@ body {
 .yeartext {
     font-family: "Comic Sans MS", "sans-serif";
     color: white;
+    padding-left: 10px;
 }
 
 .about {
@@ -54,4 +55,16 @@ body {
     right: 9px;
     background: rgb(63, 63, 63);
     border-radius: 0px 0px 10px 10px;
+}
+
+.socials {
+    margin-left: auto;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.soclink > img {
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
 }

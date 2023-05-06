@@ -3,7 +3,7 @@ function loadStuff()
     // Create navigation bar for current HTML page
     let navbarElement = document.createElement("nav");
     navbarElement.innerHTML = `
-    <a href="index.html"><img src="mea.png" alt="Home"></img></a>
+    <a href="index.html"><img src="mea.png" alt="Home"></a>
     <a href="other.html">Test</a>
     `;
     document.querySelector("body").appendChild(navbarElement);
