@@ -1,7 +1,7 @@
 class GlobalClass {
     constructor() {
         this.csharp = {
-            "C# Hello World Example": `using System;
+            "C# Hello World": `using System;
 
 namespace HelloWorld
 {

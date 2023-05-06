@@ -27,7 +27,7 @@ function loadStuff() {
 
     dropdownToggle.addEventListener('click', function () {
         dropdownMenu.classList.toggle('show');
-dropdownToggle.children[1].classList.toggle('showed');
+        dropdownToggle.children[1].classList.toggle('showed');
     });
 
     // Get the modal element
@@ -42,7 +42,7 @@ dropdownToggle.children[1].classList.toggle('showed');
 
     // Open the modal when the button is clicked
     btn.onclick = function () {
-        var csCodeIndex = "C# Hello World Example";
+        var csCodeIndex = "C# Hello World";
         var codeBlock = document.getElementById('code-block');
         codeBlock.innerHTML = `<p style="color:white;position: fixed;margin-top: -25px;font-weight: bold;">${csCodeIndex}</p>
         <pre><code class="language-csharp">${globalInstance.csharp[csCodeIndex]}</code></pre>`;
