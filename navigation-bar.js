@@ -1,9 +1,9 @@
 // Create navigation bar for current HTML page
 let navbarElement = document.createElement("nav");
 navbarElement.innerHTML = `
-<a href="./index/">Home</a>
+<a href="./index">Home</a>
 
-<a href="./other/">Test</a>
+<a href="./other">Test</a>
 `;
 document.querySelector("body").appendChild(navbarElement);
 
