@@ -217,3 +217,10 @@ code[class*="language-"] {
     text-decoration: none;
     cursor: pointer;
 }
+
+#header
+{
+    font-family: "Comic Sans MS", sans-serif;
+    margin-left: 50px;
+    color: white;  
+}
