@@ -154,6 +154,7 @@ code[class*="language-"] {
     height: 20px;
     animation-name: dropdown_Show_Text;
     animation-duration: 0.5s;
+    text-decoration: none;
 }
 
 .arrow {
