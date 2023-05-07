@@ -157,6 +157,11 @@ code[class*="language-"] {
     text-decoration: none;
 }
 
+.dropdown-menu span {
+    animation-name: dropdown_Show_Text;
+    animation-duration: 0.5s;
+}
+
 .arrow {
     width: 20px;
     height: 20px;
