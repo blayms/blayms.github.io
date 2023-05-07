@@ -8,7 +8,7 @@ function loadStuff() {
     let navbarElement = document.createElement("nav");
     navbarElement.innerHTML = `
     <a href="index.html"><img src="mea.png" alt="Home"></a>
-    <a href="other.html">Test</a>
+    <a href="index.html">Mod Extra Assets Docs</a>
     `;
     document.querySelector("body").appendChild(navbarElement);
 
