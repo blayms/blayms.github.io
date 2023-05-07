@@ -166,6 +166,8 @@ code[class*="language-"] {
     margin-top: 7.5px;
     float: right;
     margin-right: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.1s linear;
 }
 
 .dropdown-toggle.showed {
@@ -173,7 +175,8 @@ code[class*="language-"] {
 }
 
 .dropdown-toggle.showed > .arrow {
-    transform: scaleY(-1);
+    transform: rotate(180deg);
+    transition: transform 0.1s linear;
 }
 
 .modal {
