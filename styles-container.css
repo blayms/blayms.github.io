@@ -7,7 +7,6 @@ nav {
 }
 
     nav > a {
-        font-family: "Comic Sans MS", "sans-serif";
         font-size: 24px;
         color: white;
         padding-left: 10px;
@@ -25,6 +24,7 @@ nav {
 
 body {
     background-color: rgb(45,45,45);
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 .filler {
@@ -39,7 +39,6 @@ body {
 }
 
 .yeartext {
-    font-family: "Comic Sans MS", "sans-serif";
     color: white;
     padding-left: 10px;
 }
@@ -97,7 +96,6 @@ code[class*="language-"] {
 .dropdown-toggle {
     padding: 10px;
     cursor: pointer;
-    font-family: 'Comic Sans MS', 'sans-serif';
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -149,7 +147,6 @@ code[class*="language-"] {
     display: block;
     padding: 10px;
     color: #ffffff;
-    font-family: 'Comic Sans MS', 'sans-serif';
     margin-left: 50px;
     height: 20px;
     animation-name: dropdown_Show_Text;
@@ -220,7 +217,13 @@ code[class*="language-"] {
 
 #header
 {
-    font-family: "Comic Sans MS", sans-serif;
-    margin-left: 50px;
-    color: white;  
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+h3, p
+{
+    color: white;
+    margin-left: 20px;
 }

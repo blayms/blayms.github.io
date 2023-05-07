@@ -1,2 +1,2 @@
 # Mod Extra Assets Documentation
-ModExtraAssets is the tool to mod Unity games (mostly, Baldi's Basics) that is made by [Blayms](https://www.youtube.com/channel/UCCZVdgxeUCGcgmo9OUQouaQ)
+ModExtraAssets is the tool to mod Unity games that is made by [Blayms](https://www.youtube.com/channel/UCCZVdgxeUCGcgmo9OUQouaQ), it was intended to be used for Baldi's Basics, but it can literally be used everywhere on every Unity game that uses Mono instead of IL2CPP, with it you can create UI elements, objects on the map, change textures and many other stuff! 
