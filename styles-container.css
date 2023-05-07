@@ -176,7 +176,7 @@ code[class*="language-"] {
 .modal {
     display: none; /* Hide the modal by default */
     position: fixed; /* Fixed position to overlay the content */
-    z-index: 1; /* Set a higher z-index value to make sure it appears above other elements */
+    z-index: 10; /* Set a higher z-index value to make sure it appears above other elements */
     left: 0;
     top: 0;
     width: 100%;
