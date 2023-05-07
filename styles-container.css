@@ -137,10 +137,11 @@ code[class*="language-"] {
 
 .dropdown-menu.show {
     display: block;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     background-color: rgb(92, 92, 92);
     animation-name: dropdown_Show_BG;
     animation-duration: 0.5s;
+    position: relative;
 }
 
 
@@ -164,9 +165,13 @@ code[class*="language-"] {
     margin-right: 5px;
 }
 
-    .arrow.showed {
-        transform: scaleY(-1);
-    }
+.dropdown-toggle.showed {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.dropdown-toggle.showed > .arrow {
+    transform: scaleY(-1);
+}
 
 .modal {
     display: none; /* Hide the modal by default */
