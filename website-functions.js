@@ -1,5 +1,5 @@
-function loadStuff() {
-
+document.addEventListener('DOMContentLoaded', function ()
+{
     window.addEventListener('DOMContentLoaded', (event) => {
         Prism.highlightAll();
     });
@@ -73,6 +73,4 @@ function loadStuff() {
             modal.style.display = "none";
         }
     };
-}
-
-setTimeout(loadStuff, 10)
+});
