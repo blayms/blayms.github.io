@@ -43,13 +43,13 @@ function loadStuff() {
 
 
     // Get the modal element
-    var modal = document.getElementById("myModal");
+    var modal = document.querySelector("#myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("openModal");
+    var btn = document.querySelector("#openModal");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.querySelector(".close");
 
 
     // Open the modal when the button is clicked
